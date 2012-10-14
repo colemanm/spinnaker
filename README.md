@@ -5,6 +5,7 @@ Once [imposm and its prerequisites are running](http://imposm.org/docs/imposm/la
 ## Importing
 
 Run the import like this:
+
     imposm -U dbuser -d dbname -m spinnaker-mapping.py --read --write --optimize --deploy-production-tables florida.osm.pbf
 
 ## Resources
