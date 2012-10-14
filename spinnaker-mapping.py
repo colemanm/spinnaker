@@ -406,6 +406,8 @@ amenities = Points(
     ),
 })
 
+# Custom tables for OpenSeaMap features
+
 manmade = Points(
   name = 'manmade',
   mapping = {
@@ -423,7 +425,7 @@ manmade = Points(
     ),
 })
 
-manmade_ways = Linestrings(
+manmade_ways = LineStrings(
   name = 'manmade_ways',
   mapping = {
     'man_made': (
@@ -445,7 +447,7 @@ beacons = Points(
       'beacon_isolated_danger',
       'beacon_special_purpose',
     )
-  }
+  },
   fields = (
     ('seamark:name', String()),
     ('seamark:beacon_lateral:shape', String()),
@@ -480,7 +482,7 @@ buoys = Points(
       'buoy_isolated_danger',
       'buoy_special_purpose',
     )
-  }
+  },
   fields = (
     ('seamark:name', String()),
     ('seamark:buoy_lateral:shape', String()),
@@ -513,7 +515,7 @@ lights = Points(
       'light_minor',
       'light_major',
     )
-  }
+  },
   fields = (
     ('seamark:name', String()),
     ('seamark:light:character', String()),
