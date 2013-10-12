@@ -1,5 +1,8 @@
 Spinnaker is a set of tools for working with NOAA nautical chart data. NOAA publishes electronic nautical chart data (ENCs), and the printable raster nautical chart series (RNCs).
 
+* [Download ENCs](http://www.charts.noaa.gov/ENCs/ENCs.shtml)
+* [Download RNCs](http://www.charts.noaa.gov/RNCs/RNCs.shtml)
+
 ## Tools
 
 ### `rnc_convert.rb`
