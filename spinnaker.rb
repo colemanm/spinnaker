@@ -24,11 +24,11 @@ class Spinnaker < Thor
 
       collection = RGeo::GeoJSON.decode(File.read("#{options[:path]}/#{section}_soundings_raw.geojson"), :json_parser => :json)
 
-      geojson = {}
+      geojson = []
 
       collection.each do |f|
         %w"FFTP_RIND EXPSOU NOBJNM OBJNAM QUASOU SOUACC TECSOU VERDAT STATUS INFORM NINFOM NTXTDS SCAMAX TXTDSC REDCAT RECIND".each do |k|
-          f.delete(k)
+          f.keys.delete(k)
         end
         geojson << RGeo::GeoJSON.encode(f)
       end
